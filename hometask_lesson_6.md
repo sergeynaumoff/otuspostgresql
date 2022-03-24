@@ -34,7 +34,7 @@
 
 4. Создаём в GCP новый диск далее в виртуальной машине
 
-   lsbls выдаёт наличие нового виртуального диска sdb
+   lsblk выдаёт наличие нового виртуального диска sdb
 
    sudo mkfs.ext4 /dev/sdb
 
@@ -74,7 +74,7 @@
 
 8. Меняем в конфигурационном файле /etc/postgres/14/main/postgresql.conf дииректорию хранения данных кластера
 
-   data_directory = '/var/lib/postgresql/14/main
+   data_directory = '/mnt/data/main'
 
 9. Стартуем кластер sudo pg_ctlcluster 14 main start
 
