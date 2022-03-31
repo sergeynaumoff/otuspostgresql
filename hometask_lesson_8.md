@@ -1,0 +1,177 @@
+Результат pgbench  -c 8 -P 60 -T 3600 -U postgres postgres 
+
+Сденее значение TPS в последней 1\6 теста составляет 295.3
+
+Данные pgbench ниже
+
+pgbench (14.2 (Debian 14.2-1.pgdg100+1))
+starting vacuum...end.
+progress: 60.0 s, 886.3 tps, lat 9.007 ms stddev 4.593
+progress: 120.0 s, 854.3 tps, lat 9.355 ms stddev 4.853
+progress: 180.0 s, 887.6 tps, lat 9.005 ms stddev 4.573
+progress: 240.0 s, 913.4 tps, lat 8.749 ms stddev 4.488
+progress: 300.0 s, 672.0 tps, lat 11.864 ms stddev 19.166
+progress: 360.0 s, 560.4 tps, lat 14.247 ms stddev 23.521
+progress: 420.0 s, 519.3 tps, lat 15.379 ms stddev 24.412
+progress: 480.0 s, 523.9 tps, lat 15.241 ms stddev 24.409
+progress: 540.0 s, 533.1 tps, lat 14.982 ms stddev 24.346
+progress: 600.0 s, 536.5 tps, lat 14.881 ms stddev 24.128
+progress: 660.0 s, 525.8 tps, lat 15.197 ms stddev 24.253
+progress: 720.0 s, 535.7 tps, lat 14.909 ms stddev 24.124
+progress: 780.0 s, 523.9 tps, lat 15.253 ms stddev 24.382
+progress: 840.0 s, 537.8 tps, lat 14.853 ms stddev 23.998
+progress: 900.0 s, 532.1 tps, lat 15.002 ms stddev 25.825
+progress: 960.0 s, 535.5 tps, lat 14.910 ms stddev 24.195
+progress: 1020.0 s, 524.0 tps, lat 15.240 ms stddev 24.184
+progress: 1080.0 s, 513.0 tps, lat 15.570 ms stddev 23.947
+progress: 1140.0 s, 524.1 tps, lat 15.242 ms stddev 24.138
+progress: 1200.0 s, 501.4 tps, lat 15.927 ms stddev 24.438
+progress: 1260.0 s, 506.2 tps, lat 15.780 ms stddev 24.360
+progress: 1320.0 s, 513.9 tps, lat 15.528 ms stddev 24.178
+progress: 1380.0 s, 506.0 tps, lat 15.782 ms stddev 24.530
+progress: 1440.0 s, 531.0 tps, lat 15.043 ms stddev 23.997
+progress: 1500.0 s, 514.3 tps, lat 15.512 ms stddev 25.982
+progress: 1560.0 s, 520.3 tps, lat 15.356 ms stddev 24.392
+progress: 1620.0 s, 527.1 tps, lat 15.154 ms stddev 23.983
+progress: 1680.0 s, 489.4 tps, lat 16.333 ms stddev 24.339
+progress: 1740.0 s, 493.7 tps, lat 16.176 ms stddev 24.298
+progress: 1800.0 s, 523.3 tps, lat 15.257 ms stddev 24.432
+progress: 1860.0 s, 534.6 tps, lat 14.943 ms stddev 24.107
+progress: 1920.0 s, 543.7 tps, lat 14.695 ms stddev 24.033
+progress: 1980.0 s, 545.3 tps, lat 14.649 ms stddev 24.090
+progress: 2040.0 s, 510.8 tps, lat 15.643 ms stddev 24.448
+progress: 2100.0 s, 512.3 tps, lat 15.568 ms stddev 26.548
+progress: 2160.0 s, 545.8 tps, lat 14.635 ms stddev 24.062
+progress: 2220.0 s, 542.8 tps, lat 14.709 ms stddev 24.084
+progress: 2280.0 s, 548.4 tps, lat 14.555 ms stddev 23.869
+progress: 2340.0 s, 537.2 tps, lat 14.867 ms stddev 24.473
+progress: 2400.0 s, 539.6 tps, lat 14.809 ms stddev 24.123
+progress: 2460.0 s, 524.7 tps, lat 15.221 ms stddev 24.390
+progress: 2520.0 s, 533.3 tps, lat 14.971 ms stddev 24.321
+progress: 2580.0 s, 543.5 tps, lat 14.700 ms stddev 24.042
+progress: 2640.0 s, 546.7 tps, lat 14.609 ms stddev 24.099
+progress: 2700.0 s, 492.6 tps, lat 16.244 ms stddev 25.538
+progress: 2760.0 s, 297.5 tps, lat 26.881 ms stddev 7.508
+progress: 2820.0 s, 296.5 tps, lat 26.976 ms stddev 7.724
+progress: 2880.0 s, 296.8 tps, lat 26.947 ms stddev 7.714
+progress: 2940.0 s, 297.0 tps, lat 26.932 ms stddev 7.368
+progress: 3000.0 s, 296.7 tps, lat 26.958 ms stddev 7.834
+progress: 3060.0 s, 297.1 tps, lat 26.919 ms stddev 8.081
+progress: 3120.0 s, 296.4 tps, lat 26.975 ms stddev 11.588
+progress: 3180.0 s, 297.4 tps, lat 26.892 ms stddev 11.542
+progress: 3240.0 s, 297.8 tps, lat 26.854 ms stddev 11.588
+progress: 3300.0 s, 276.2 tps, lat 28.948 ms stddev 89.756
+progress: 3360.0 s, 297.4 tps, lat 26.886 ms stddev 11.208
+progress: 3420.0 s, 297.7 tps, lat 26.855 ms stddev 11.269
+progress: 3480.0 s, 297.6 tps, lat 26.867 ms stddev 11.299
+progress: 3540.0 s, 297.9 tps, lat 26.842 ms stddev 11.182
+progress: 3600.0 s, 297.3 tps, lat 26.894 ms stddev 11.393
+transaction type: <builtin: TPC-B (sort of)>
+scaling factor: 1
+query mode: simple
+number of clients: 8
+number of threads: 1
+duration: 3600 s
+number of transactions actually processed: 1782259
+latency average = 16.138 ms
+latency stddev = 23.363 ms
+initial connection time = 69.223 ms
+tps = 495.077699 (without initial connection time)
+
+
+
+Добиться ровного значения TPS на горизонте часа удалось со следующими настройками AUTOVACUUM
+
+autovacuum = on
+
+autovacuum_max_workers = 15 
+
+autovacuum_naptime = 30s               
+
+autovacuum_vacuum_threshold = 25     
+
+autovacuum_analyze_threshold = 50       
+
+autovacuum_vacuum_scale_factor = 0.05
+
+Причём в таблице pgbench_history  в результате бенчмарка мёртвых кортежей нет, а  значит настройки autovacuum_vacuum_threshold и autovacuum_vacuum_scale_factor особого значения играть не должны были.
+
+Пока сделал вывод что ключевое значение играют autovacuum_max_workers и autovacuum_naptime.
+
+Чем выше autovacuum_max_workers, тем ниже TPS И выше latency
+
+serge@postgres:~$ pgbench -c 8 -P 60 -T 3600 -U postgres postgres
+Password:
+pgbench (14.2 (Debian 14.2-1.pgdg100+1))
+starting vacuum...end.
+progress: 60.0 s, 569.3 tps, lat 14.019 ms stddev 9.778
+progress: 120.0 s, 278.2 tps, lat 28.742 ms stddev 90.909
+progress: 180.0 s, 299.3 tps, lat 26.718 ms stddev 11.397
+progress: 240.0 s, 299.1 tps, lat 26.733 ms stddev 11.324
+progress: 300.0 s, 297.2 tps, lat 26.905 ms stddev 11.577
+progress: 360.0 s, 297.4 tps, lat 26.881 ms stddev 11.836
+progress: 420.0 s, 297.3 tps, lat 26.897 ms stddev 11.823
+progress: 480.0 s, 297.3 tps, lat 26.896 ms stddev 11.426
+progress: 540.0 s, 297.7 tps, lat 26.861 ms stddev 11.492
+progress: 600.0 s, 296.9 tps, lat 26.932 ms stddev 11.762
+progress: 660.0 s, 297.0 tps, lat 26.919 ms stddev 11.919
+progress: 720.0 s, 276.8 tps, lat 28.891 ms stddev 88.187
+progress: 780.0 s, 297.2 tps, lat 26.900 ms stddev 11.487
+progress: 840.0 s, 297.1 tps, lat 26.911 ms stddev 11.447
+progress: 900.0 s, 297.4 tps, lat 26.887 ms stddev 11.556
+progress: 960.0 s, 297.4 tps, lat 26.888 ms stddev 11.402
+progress: 1020.0 s, 297.8 tps, lat 26.852 ms stddev 11.472
+progress: 1080.0 s, 297.1 tps, lat 26.910 ms stddev 11.508
+progress: 1140.0 s, 297.2 tps, lat 26.900 ms stddev 11.637
+progress: 1200.0 s, 297.4 tps, lat 26.883 ms stddev 11.525
+progress: 1260.0 s, 296.9 tps, lat 26.927 ms stddev 11.728
+progress: 1320.0 s, 276.4 tps, lat 28.932 ms stddev 91.645
+progress: 1380.0 s, 297.1 tps, lat 26.913 ms stddev 11.694
+progress: 1440.0 s, 297.2 tps, lat 26.909 ms stddev 11.548
+progress: 1500.0 s, 297.3 tps, lat 26.896 ms stddev 11.711
+progress: 1560.0 s, 297.1 tps, lat 26.915 ms stddev 11.559
+progress: 1620.0 s, 297.7 tps, lat 26.852 ms stddev 11.545
+progress: 1680.0 s, 296.8 tps, lat 26.935 ms stddev 11.698
+progress: 1740.0 s, 297.3 tps, lat 26.896 ms stddev 11.263
+progress: 1800.0 s, 297.4 tps, lat 26.880 ms stddev 11.047
+progress: 1860.0 s, 297.1 tps, lat 26.913 ms stddev 11.292
+progress: 1920.0 s, 276.4 tps, lat 28.926 ms stddev 91.685
+progress: 1980.0 s, 297.0 tps, lat 26.925 ms stddev 11.726
+progress: 2040.0 s, 297.3 tps, lat 26.894 ms stddev 11.389
+progress: 2100.0 s, 297.3 tps, lat 26.894 ms stddev 11.382
+progress: 2160.0 s, 297.2 tps, lat 26.907 ms stddev 11.657
+progress: 2220.0 s, 297.7 tps, lat 26.858 ms stddev 11.502
+progress: 2280.0 s, 297.0 tps, lat 26.924 ms stddev 11.721
+progress: 2340.0 s, 297.2 tps, lat 26.905 ms stddev 11.433
+progress: 2400.0 s, 297.6 tps, lat 26.868 ms stddev 11.374
+progress: 2460.0 s, 297.4 tps, lat 26.888 ms stddev 11.445
+progress: 2520.0 s, 276.4 tps, lat 28.928 ms stddev 90.604
+progress: 2580.0 s, 297.1 tps, lat 26.908 ms stddev 11.432
+progress: 2640.0 s, 297.3 tps, lat 26.894 ms stddev 11.401
+progress: 2700.0 s, 297.8 tps, lat 26.856 ms stddev 11.385
+progress: 2760.0 s, 297.4 tps, lat 26.885 ms stddev 11.471
+progress: 2820.0 s, 297.8 tps, lat 26.862 ms stddev 11.437
+progress: 2880.0 s, 297.2 tps, lat 26.898 ms stddev 11.495
+progress: 2940.0 s, 297.5 tps, lat 26.879 ms stddev 11.741
+progress: 3000.0 s, 296.5 tps, lat 26.970 ms stddev 11.805
+progress: 3060.0 s, 296.9 tps, lat 26.929 ms stddev 11.592
+progress: 3120.0 s, 277.0 tps, lat 28.869 ms stddev 88.513
+progress: 3180.0 s, 297.2 tps, lat 26.906 ms stddev 11.690
+progress: 3240.0 s, 297.3 tps, lat 26.892 ms stddev 11.554
+progress: 3300.0 s, 297.7 tps, lat 26.861 ms stddev 11.317
+progress: 3360.0 s, 297.2 tps, lat 26.904 ms stddev 11.614
+progress: 3420.0 s, 297.5 tps, lat 26.875 ms stddev 11.462
+progress: 3480.0 s, 297.2 tps, lat 26.910 ms stddev 11.658
+progress: 3540.0 s, 297.7 tps, lat 26.863 ms stddev 11.584
+progress: 3600.0 s, 296.6 tps, lat 26.963 ms stddev 11.642
+transaction type: <builtin: TPC-B (sort of)>
+scaling factor: 1
+query mode: simple
+number of clients: 8
+number of threads: 1
+duration: 3600 s
+number of transactions actually processed: 1079395
+latency average = 26.667 ms
+latency stddev = 29.626 ms
+initial connection time = 77.868 ms
+tps = 299.836147 (without initial connection time)
