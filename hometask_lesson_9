@@ -4,7 +4,7 @@
 
 3. CREATE EXTENSION pg_buffercache;
 
-4. **SELECT** count(*) **FROM** pg_buffercache **WHERE** isdirty;
+4. SELECT count(*) FROM pg_buffercache WHERE isdirty;
 
    count
    -------
@@ -30,7 +30,7 @@
 
 6. Сборисим грязные буфферы на диск командой CHECKPOINT;
 
-   **SELECT** count(*) **FROM** pg_buffercache **WHERE** isdirty;
+   SELECT count(*) FROM pg_buffercache WHERE isdirty;
 
    count
 
@@ -83,7 +83,7 @@
 
 ​	checkpoint_timeout = 30s
 
-​	sudo pg_ctlcluster 14 main reloaв
+​	sudo pg_ctlcluster 14 main reload
 
 12. Проверим статистику выполненных CHECKPOINT
 
