@@ -190,7 +190,7 @@
 
     SELECT locktype, relation::REGCLASS, virtualxid, transactionid, mode, granted FROM pg_locks WHERE pid = 9166;
 
-    ![](https://github.com/sergeynaumoff/otuspostgresql/blob/main/WindowsTerminal_Klg8SWuloh.png)
+    ![](/sergeynaumoff/otuspostgresql/blob/main/WindowsTerminal_Klg8SWuloh.png)
 
 ​	На скриншоте видно, что наш процесс держит 5 блокировок. Нас интересуют только 4, так как одни из блокировок идёт на pg_locks
 
