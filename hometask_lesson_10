@@ -277,7 +277,7 @@
 
     SELECT locktype, relation::REGCLASS, virtualxid, transactionid, mode, granted FROM pg_locks WHERE pid = 15396;
 
-    ![](C:\Users\serge\OneDrive\Документы\ShareX\Screenshots\2022-04\WindowsTerminal_QZh5X8dFoH.png)
+    ![](https://github.com/sergeynaumoff/otuspostgresql/blob/a0db2765ef61de5f591369b14cbfe7f6b7396d90/WindowsTerminal_Klg8SWuloh.png)
 
     Здесь:
 
