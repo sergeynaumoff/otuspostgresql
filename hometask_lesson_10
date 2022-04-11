@@ -190,7 +190,7 @@
 
     SELECT locktype, relation::REGCLASS, virtualxid, transactionid, mode, granted FROM pg_locks WHERE pid = 9166;
 
-    ![](C:\Users\serge\OneDrive\Документы\ShareX\Screenshots\2022-04\WindowsTerminal_Klg8SWuloh.png)
+   ![](https://disk.yandex.ru/i/KFl0f_B-vG32RQ)
 
 ​	На скриншоте видно, что наш процесс держит 5 блокировок. Нас интересуют только 4, так как одни из блокировок идёт на pg_locks
 
